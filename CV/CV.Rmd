@@ -7,7 +7,7 @@ email: hildemardealencar@gmail.com
 github: FranciscoAlencar
 linkedin: francisco-alencar
 aboutme: I am currently a Ph.D. student at the University of Campinas (UNICAMP) in the Department of Statistics. My research consists of the development of classification models for longitudinal data and multivariate distributions. In my research, I use R software to apply theory and develop calculations. I am interested in statistical modeling, programming languages, and technology. I am always looking to improve my computational skills and scientific knowledge.
-headcolor: 000000
+headcolor: 414141
 output: vitae::awesomecv
 ---
 
