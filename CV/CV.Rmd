@@ -1,0 +1,164 @@
+---
+name: Francisco Hildemar Calixto de Alencar
+date: "`r format(Sys.time(), '%B %Y')`"
+position: Data Scientist Jr.
+phone: +55 85 99766-6934
+email: hildemardealencar@gmail.com
+github: FranciscoAlencar
+linkedin: francisco-alencar
+aboutme: I am currently a Statistical doctoral student at the University of Campinas working with multivariate finite mixtures. Member of the regression models research group of the UNICAMP Statistics department. I have an interest in statistical modeling and programming languages. Challenges are welcome, as I seek to perfect my abilities and knowledge.
+headcolor: 000000
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Doctoral Student in Statistics", "University of Campinas", "Campinas, SP, Brazil", "2016 - Currently", "Research project: Finite mixture of linear mixed models for longitudinal data",
+  "Doctoral Student in Statistics", "University of Campinas", "Campinas, SP, Brazil", "2016 - Currently", "Scholarship: CAPES",
+  "Doctoral Student in Statistics", "University of Campinas", "Campinas, SP, Brazil", "2016 - Currently", "Advisor: Larissa Avila Matos",
+  "Doctoral Student in Statistics", "University of Campinas", "Campinas, SP, Brazil", "2016 - Currently", "Co-advisor: Victor Hugo Lachos Dávila",
+  "Doctoral Student in Statistics", "University of Campinas", "Campinas, SP, Brazil", "2016 - Currently", "Will be concluded in March, 2020",
+  "Master in Statistics", "Federal University of Pernambuco", "Recife, PE, Brazil", "2014 - 2016", "Research project: Bayesian influence diagnostic in a class of Beta Rectangular Regression",
+  "Master in Statistics", "Federal University of Pernambuco", "Recife, PE, Brazil", "2014 - 2016", "Scholarship: CAPES",
+  "Master in Statistics", "Federal University of Pernambuco", "Recife, PE, Brazil", "2014 - 2016", "Advisor: Raydonal Ospina Martínez",
+  "Master in Statistics", "Federal University of Pernambuco", "Recife, PE, Brazil", "2014 - 2016", "Co-advisor: Juvêncio Santos Nobre",
+  "Bachelor degree in Statistics", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2010 - 2013", "Research project: Beta Rectangular Regression Models",
+  "Bachelor degree in Statistics", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2010 - 2013", "Advisor: Juvêncio Santos Nobre"
+) %>%
+  detailed_entries(uni, dates, degree, loc, details)
+```
+
+# Experience
+
+## Teaching Experience
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details, 
+  "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S2/2018", "Course: ME414 - Estatística para Experimentalistas",
+  "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S2/2018", "Advisor: Larissa Avila Matos", 
+  "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S2/2018", "PED B - Integral Teaching Activities", 
+   "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S1/2018", "Course: ME414 - Estatística para Experimentalistas",
+  "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S1/2018", "Advisor:  Diego Fernando de Bernardini", 
+  "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S1/2018", "PED C - Partial Teaching Support Activities",
+  "Institutional Program of Iniciation to Teaching Scholarships (PIBID)", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012 - 2013", "Teaching Assistant: Probabilidade I; Probabilidade II; Estatística básica; Softwares em Estatística.",
+  "Institutional Program of Iniciation to Teaching Scholarships (PIBID)", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012 - 2013", "Development of the booklet: Simulação Estocástica usando o software livre R."
+) %>%
+  detailed_entries(company, dates, role, loc, details)
+```
+
+*See [here](https://github.com/FranciscoAlencar/R-software/blob/master/Stochastic_simulation_R.pdf) the booklet "Simulação Estocástica usando o software livre R"*
+
+## Other Experience 
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details, 
+  "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Responsible for managing the financial actions of company",
+  "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Statistical consulting services",
+  "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Development of the booklet: Introdução ao R.", 
+) %>%
+  detailed_entries(company, dates, role, loc, details)
+```
+
+ See [here](https://github.com/FranciscoAlencar/R-introduction/blob/master/Apostila_R.pdf) the booklet "Introdução ao R"
+
+# Skills 
+
+```{r}
+tribble(
+   ~ title, ~where, ~ when, ~ details, 
+   "Analytical","Statistical Modeling", "", "", 
+   "Programming", "R (Advanced), Python, JAGS, Jupyter Notebook", "", "",
+   "Operating systems", "Linux/Unix (Ubuntu) and Windows", "", ""
+) %>%
+  detailed_entries(where, when, title, details)
+```
+
+# Workshop and courses attended 
+
+```{r}
+tribble(
+   ~ course, ~ where, ~loc, ~when, ~details,
+   "Python Programming: A Concise Introduction", "Coursera/ Wesleyan University", "Online", "2019", "14h",
+   "Data Visualization with R", "UCONN SPORTS ANALYTICS SYMPOSIUM (UCSAS) - University of Connecticut", "Storrs, CT, USA", "2019", "2h",
+    "Introdução ao aprendizado de máquinas usando R", "XII Encontro Científico dos Pós-Graduandos do IMECC", "Campinas, SP, Brazil", "2017", "4h"
+) %>%
+  detailed_entries(where,when,course,loc)
+```
+
+# Technical Report 
+
+```{r}
+tribble(
+   ~ title, ~authors, ~ where, ~when, ~ details, 
+   "Finite Mixture of Censored Linear Mixed Models for Irregularly Observed Longitudinal Data", "Alencar, Francisco H.C.; Matos, Larissa A.; Lachos, Victor H.", "University of Connecticut", "2019", "Technical Report, 19-23", 
+   "Finite Mixture Modeling of Censored and Missing Data Using the Multivariate Skew-Normal Distribution", "Alencar, Francisco H.C.; Galarza, Christian E.; Matos, Larissa A.; Lachos, Victor H.", "University of Connecticut", "2019", "Technical Report, 19-31"
+) %>%
+  detailed_entries(authors, when, title, where, details)
+```
+
+# Selected Software 
+
+## R Package
+
+```{r}
+tribble(
+   ~ name, ~ why, ~when, ~loc, ~details,
+   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "It fits    finite mixture models for censored or/and missing data using several multivariate distributions. Point estimation and asymptotic inference (via empirical information matrix) are offered as well as censored data generation. Pairwise scatter and contour plots can be generated. Possible multivariate distributions are the well-known normal, Student-t and skew-normal distributions.",  "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Released to CRAN",
+   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Author and maintainer"
+) %>%
+  detailed_entries(why,when,name,loc,details)
+```
+
+
+# Presentations
+
+## Oral presentation 
+
+```{r}
+tribble(
+   ~ title, ~where, ~ when, ~ details, 
+   "Finite Mixture of Censored Linear Mixed Models for Longitudinal Data","33rd New England Statistics Symposium (NESS)", "May 15-17, 2019", "Hartford, CT, USA"
+) %>%
+  detailed_entries(title, when, where, details)
+```
+
+\newpage
+
+## Poster presentation
+
+```{r}
+tribble(
+   ~ title, ~where, ~ when, ~ details, 
+   "Simulação Estocástica Utilizando o Software livre R","XXI Encontro de Iniciação à Docência", "2012", "Fortaleza, CE, Brazil"
+) %>%
+  detailed_entries(title, when, where, details)
+```
+
+
+# Events Attended 
+
+```{r}
+tribble(
+   ~ event, ~loc, ~where, ~ when, 
+   "UCONN SPORTS ANALYTICS SYMPOSIUM (UCSAS)", "McHugh Hall, University of Connecticut", "Storrs, CT, USA", "2019",
+   "33rd New England Statistics Symposium (NESS)", "Hilton Hartford", "Hartford, CT, USA", "2019",
+   "XIII Encontro Científico dos Pós-Graduandos do IMECC", "Instituto de Matemática, Estatística e Computação Científica (IMECC) - UNICAMP","Campinas, SP, Brazil", "2018",
+   "XII Encontro Científico dos Pós-Graduandos do IMECC", "Instituto de Matemática, Estatística e Computação Científica (IMECC) - UNICAMP","Campinas, SP, Brazil", "2017",
+    "XXII Encontro de Iniciação à Docência", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2013",
+   "XXI Encontro de Iniciação à Docência", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012"
+) %>%
+  detailed_entries(loc,when,event,where)
+```
+
+
+
