@@ -50,12 +50,12 @@ tribble(
   "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S1/2018", "Advisor:  Diego Fernando de Bernardini", 
   "Teaching Assistant", "University of Campinas", "Campinas, SP, Brazil", "S1/2018", "PED C - Partial Teaching Support Activities",
   "Institutional Program of Iniciation to Teaching Scholarships (PIBID)", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012 - 2013", "Teaching Assistant: Probabilidade I; Probabilidade II; Estatística básica; Softwares em Estatística.",
-  "Institutional Program of Iniciation to Teaching Scholarships (PIBID)", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012 - 2013", "Development of the booklet: Simulação Estocástica usando o software livre R."
+  "Institutional Program of Iniciation to Teaching Scholarships (PIBID)", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012 - 2013", "Development of the handout: Simulação Estocástica usando o software livre R."
 ) %>%
   detailed_entries(company, dates, role, loc, details)
 ```
 
-*See [here](https://github.com/FranciscoAlencar/R-software/blob/master/Stochastic_simulation_R.pdf) the booklet "Simulação Estocástica usando o software livre R"*
+*See [here](https://github.com/FranciscoAlencar/R-software/blob/master/Stochastic_simulation_R.pdf) the handout "Simulação Estocástica usando o software livre R"*
 
 ## Other Experience 
 
@@ -64,12 +64,12 @@ tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details, 
   "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Responsible for managing the financial actions of company",
   "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Statistical consulting services",
-  "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Development of the booklet: Introdução ao R.", 
+  "Gauss - Junior enterprise", "Federal University of Ceará", "Fortaleza, CE, Brazil", "2012-2012", "Development of the handout: Introdução ao R.", 
 ) %>%
   detailed_entries(company, dates, role, loc, details)
 ```
 
- See [here](https://github.com/FranciscoAlencar/R-introduction/blob/master/Apostila_R.pdf) the booklet "Introdução ao R"
+ *See [here](https://github.com/FranciscoAlencar/R-introduction/blob/master/Apostila_R.pdf) the handout "Introdução ao R"*
 
 # Skills 
 
