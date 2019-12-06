@@ -123,6 +123,7 @@ tribble(
   detailed_entries(why,when,name,loc,details)
 ```
 
+
 # Apresentações
 
 ## Apresentação Oral
@@ -130,12 +131,31 @@ tribble(
 ```{r}
 tribble(
    ~ title, ~where, ~ when, ~ details, 
-   "Finite Mixture of Censored Linear Mixed Models for Longitudinal Data","33rd New England Statistics Symposium (NESS)", "May 15-17, 2019", "Hartford, CT, USA"
+   "Finite mixture modeling of censored and missing data using the
+multivariate skew-normal distribution","VI Workshop em Análise de Sobrevivência e Aplicações (WASA)", "Nov. 27-11, 2019", "Piracicaba, SP, Brasil"
+) %>%
+  detailed_entries(title, when, where, details)
+```
+
+
+```{r}
+tribble(
+   ~ title, ~where, ~ when, ~ details, 
+   "Finite Mixture of Censored Linear Mixed Models for Longitudinal Data","33rd New England Statistics Symposium (NESS)", "Mai. 15-17, 2019", "Hartford, CT, USA"
 ) %>%
   detailed_entries(title, when, where, details)
 ```
 
 ## Apresentação Pôster
+
+
+```{r}
+tribble(
+   ~ title, ~where, ~ when, ~ details, 
+   "Simulação Estocástica Utilizando o Software livre R","XXII Encontro de Iniciação à Docência", "2013", "Fortaleza, CE, Brasil"
+) %>%
+  detailed_entries(title, when, where, details)
+```
 
 ```{r}
 tribble(
@@ -151,6 +171,7 @@ tribble(
 ```{r}
 tribble(
    ~ event, ~loc, ~where, ~ when, 
+     "VI Workshop em Análise de Sobrevivência e Aplicações (WASA)", "ESALQ/USP", "Piracicaba, SP, Brasil", "2019",
    "UCONN SPORTS ANALYTICS SYMPOSIUM (UCSAS)", "McHugh Hall, University of Connecticut", "Storrs, CT, USA", "2019",
    "33rd New England Statistics Symposium (NESS)", "Hilton Hartford", "Hartford, CT, USA", "2019",
    "XIII Encontro Científico dos Pós-Graduandos do IMECC", "Instituto de Matemática, Estatística e Computação Científica (IMECC) - UNICAMP","Campinas, SP, Brasil", "2018",
