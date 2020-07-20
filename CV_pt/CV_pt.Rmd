@@ -6,7 +6,7 @@ phone: +55 85 99766-6934
 email: hildemardealencar@gmail.com
 github: FranciscoAlencar
 linkedin: francisco-alencar
-aboutme: Atualmente sou estudante de doutorado em Estatística na Universidade Estatual de Campinas (UNICAMP). Minha pesquisa consiste no desenvolvimento de modelos de classificação aplicados a dados longitudinais envolvendo distribuições multivariadas, para aplicação da teoria e cálculos realizados utilizo o software R. Tenho interesse em modelagem Estatística, linguagens de programação e tecnologias. Estou sempre em busca de melhorar minhas habilidades computacionais e expandir meu conhecimento científico.
+aboutme: Atualmente sou Cientista de Dados na CPFL Energia e estudante de doutorado em Estatística na Universidade Estatual de Campinas (UNICAMP). Minha pesquisa consiste no desenvolvimento de modelos de classificação aplicados a dados longitudinais envolvendo distribuições multivariadas, para aplicação da teoria e cálculos realizados utilizo o software R. Tenho interesse em modelagem Estatística, linguagens de programação e tecnologias. Estou sempre em busca de melhorar minhas habilidades computacionais e expandir meu conhecimento científico.
 headcolor: 414141
 output: vitae::awesomecv
 ---
@@ -25,7 +25,7 @@ tribble(
   "Doutorado em Estatística", "Universidade estadual de Campinas (UNICAMP)", "Campinas, SP, Brasil", "2016 - Atualmente", "Agência financiadora: CAPES",
   "Doutorado em Estatística", "Universidade estadual de Campinas (UNICAMP)", "Campinas, SP, Brasil", "2016 - Atualmente", "Orientadora: Larissa Avila Matos (UNICAMP)",
   "Doutorado em Estatística", "Universidade estadual de Campinas (UNICAMP)", "Campinas, SP, Brasil", "2016 - Atualmente", "Coorientador: Victor Hugo Lachos Dávila (UCONN)",
-  "Doutorado em Estatística", "Universidade estadual de Campinas (UNICAMP)", "Campinas, SP, Brasil", "2016 - Atualmente", "Previsão de término em março de 2020",
+  "Doutorado em Estatística", "Universidade estadual de Campinas (UNICAMP)", "Campinas, SP, Brasil", "2016 - Atualmente", "Previsão de término em outubro de 2020",
   "Mestrado em Estatsítica", "Universidade Federal de Pernambuco", "Recife, PE, Brasil", "2014 - 2016", "Projeto de pesquisa: Bayesian influence diagnostic in a class of Beta Rectangular Regression",
   "Mestrado em Estatsítica", "Universidade Federal de Pernambuco", "Recife, PE, Brasil", "2014 - 2016", "Agência financiadora: CAPES",
    "Mestrado em Estatsítica", "Universidade Federal de Pernambuco", "Recife, PE, Brasil", "2014 - 2016", "Orientador: Raydonal Ospina Martínez (UFPE)",
@@ -38,25 +38,30 @@ tribble(
 
 # Experiência
 
+## Experiência Profissional 
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details, 
+  "Cientista de Dados", "CPFL Energia", "Campinas, SP, Brasil", "Fev, 2020 - Atualmente", "Obtenção, tratamento e análise de dados;",
+  "Cientista de Dados", "CPFL Energia", "Campinas, SP, Brasil", "Fev, 2020 - Atualmente", "Desenvolvimento de ferramenta de extração de dados (WebScraping - Python);",
+"Cientista de Dados", "CPFL Energia", "Campinas, SP, Brasil", "Fev, 2020 - Atualmente", "Aplicação de técnicas de Machine Learning."
+) %>%
+  detailed_entries(company, dates, role, loc, details)
+```
+
 ## Experiência de Ensino
 
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details, 
-  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S2/2018", "Curso: ME414 - Estatística para Experimentalistas",
-  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S2/2018", "Supervisora: Larissa Avila Matos (UNICAMP)", 
-  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S2/2018", "Programa de Estágio Docente (PED) B -  Atividades de Docência Parcial sob supervisão", 
-   "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S1/2018", "Curso: ME414 - Estatística para Experimentalistas",
-  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S1/2018", "Supervisor:  Diego Fernando de Bernardini (UNICAMP)", 
-  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S1/2018", " Programa de Estágio Docente (PED) C - Atividades de Apoio à Docência sob supervisão",
- "Programa de Iniciação a Docência", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012 - 2013", "Monitor: Probabilidade I; Probabilidade II; Estatística básica; Softwares em Estatística.",
-     "Programa de Iniciação a Docência", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012 - 2013", "Supervisor: Juvêncio Santos Nobre (UFC)",
-    "Programa de Iniciação a Docência", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012 - 2013", "Desenvolvimento de material didático: Simulação Estocástica usando o software livre R."
+  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S1 - S2/2018", "Curso: ME414 - Estatística para Experimentalistas",
+  "Monitor", "Universidade Estadual de Campinas", "Campinas, SP, Brasil", "S1 - S2/2018", "Programa de Estágio Docente (PED) ", 
+ "Monitor", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012 - 2013", "Disciplinas: Probabilidade I; Probabilidade II; Estatística básica; Softwares em Estatística.",
+    "Monitor", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012 - 2013", "Desenvolvimento de material didático: Simulação Estocástica usando o software livre R."
 ) %>%
   detailed_entries(company, dates, role, loc, details)
 ```
-
-*Ver [aqui](https://github.com/FranciscoAlencar/R-software/blob/master/Stochastic_simulation_R.pdf) material didático "Simulação Estocástica usando o software livre R"*
 
 ## Outras Experiências
 
@@ -65,13 +70,11 @@ tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details, 
   "Gauss - Empresa Júnior", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012-2012", "Enquadramento Funcional: Diretor Administrativo Financeiro",
   "Gauss - Empresa Júnior", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012-2012", "Consultorias de trabalhos, desenvolvimento de pesquisas e análise de trabalhos.",
-  "Gauss - Empresa Júnior", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012-2012", "Desenvolvimento de apostila para ministração de minicurso: Introdução ao R.", 
+  "Gauss - Empresa Júnior", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012-2012", "Desenvolvimento de apostila para ministração de minicurso: Introdução ao R."
 ) %>%
   detailed_entries(company, dates, role, loc, details)
 ```
 
- *Ver [aqui](https://github.com/FranciscoAlencar/R-introduction/blob/master/Apostila_R.pdf) apostila "Introdução ao R"*
- 
 # Habilidades
  
 ```{r}
@@ -80,10 +83,23 @@ tribble(
    "Analítica","Modelagem Estatística", "", "", 
    "Programação", "R (Avançado), Python, JAGS, Jupyter Notebook", "", "",
    "Sistema Operacional", "Linux/Unix (Ubuntu) and Windows", "", "",
-   "Idiomas","Inglês (Intermediário), Francês (Básico)","","" 
+   "Idiomas","Inglês (Intermediário)","","" 
    
 ) %>%
   detailed_entries(where, when, title, details)
+```
+
+# Software
+
+## Pacote R
+
+```{r}
+tribble(
+   ~ name, ~ why, ~when, ~loc, ~details,
+   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "It fits    finite mixture models for censored or/and missing data using several multivariate distributions. Point estimation and asymptotic inference (via empirical information matrix) are offered as well as censored data generation. Pairwise scatter and contour plots can be generated. Possible multivariate distributions are the well-known normal, Student-t and skew-normal distributions.",  "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Disponível no CRAN",
+   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Autor e mantenedor"
+) %>%
+  detailed_entries(why,when,name,loc,details)
 ```
 
 # Workshop e Cursos
@@ -110,29 +126,14 @@ tribble(
   detailed_entries(authors, when, title, where, details)
 ```
 
-# Software
-
-## Pacote R
-
-```{r}
-tribble(
-   ~ name, ~ why, ~when, ~loc, ~details,
-   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "It fits    finite mixture models for censored or/and missing data using several multivariate distributions. Point estimation and asymptotic inference (via empirical information matrix) are offered as well as censored data generation. Pairwise scatter and contour plots can be generated. Possible multivariate distributions are the well-known normal, Student-t and skew-normal distributions.",  "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Disponível no CRAN",
-   "CensMFM", "Finite Mixture of Multivariate Censored/Missing Data", "", "2019", "Autor e mantenedor"
-) %>%
-  detailed_entries(why,when,name,loc,details)
-```
-
 
 # Apresentações
 
-## Apresentação Oral
-
 ```{r}
 tribble(
-   ~ title, ~where, ~ when, ~ details, 
+   ~ title, ~where, ~ when, ~details, 
    "Finite mixture modeling of censored and missing data using the
-multivariate skew-normal distribution","VI Workshop em Análise de Sobrevivência e Aplicações (WASA)", "Nov. 27-11, 2019", "Piracicaba, SP, Brasil"
+multivariate skew-normal distribution","VI Workshop em Análise de Sobrevivência e Aplicações (WASA)", "Nov. 27-11, 2019", "Piracicaba, SP, Brasil " 
 ) %>%
   detailed_entries(title, when, where, details)
 ```
@@ -146,38 +147,4 @@ tribble(
   detailed_entries(title, when, where, details)
 ```
 
-## Apresentação Pôster
 
-
-```{r}
-tribble(
-   ~ title, ~where, ~ when, ~ details, 
-   "Simulação Estocástica Utilizando o Software livre R","XXII Encontro de Iniciação à Docência", "2013", "Fortaleza, CE, Brasil"
-) %>%
-  detailed_entries(title, when, where, details)
-```
-
-```{r}
-tribble(
-   ~ title, ~where, ~ when, ~ details, 
-   "Simulação Estocástica Utilizando o Software livre R","XXI Encontro de Iniciação à Docência", "2012", "Fortaleza, CE, Brasil"
-) %>%
-  detailed_entries(title, when, where, details)
-```
-
-
-# Participações em Eventos 
-
-```{r}
-tribble(
-   ~ event, ~loc, ~where, ~ when, 
-     "VI Workshop em Análise de Sobrevivência e Aplicações (WASA)", "ESALQ/USP", "Piracicaba, SP, Brasil", "2019",
-   "UCONN SPORTS ANALYTICS SYMPOSIUM (UCSAS)", "McHugh Hall, University of Connecticut", "Storrs, CT, USA", "2019",
-   "33rd New England Statistics Symposium (NESS)", "Hilton Hartford", "Hartford, CT, USA", "2019",
-   "XIII Encontro Científico dos Pós-Graduandos do IMECC", "Instituto de Matemática, Estatística e Computação Científica (IMECC) - UNICAMP","Campinas, SP, Brasil", "2018",
-   "XII Encontro Científico dos Pós-Graduandos do IMECC", "Instituto de Matemática, Estatística e Computação Científica (IMECC) - UNICAMP","Campinas, SP, Brasil", "2017",
-    "XXII Encontro de Iniciação à Docência", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2013",
-   "XXI Encontro de Iniciação à Docência", "Universidade Federal do Ceará", "Fortaleza, CE, Brasil", "2012"
-) %>%
-  detailed_entries(loc,when,event,where)
-```
